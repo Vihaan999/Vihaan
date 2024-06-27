@@ -1,0 +1,14 @@
+body{
+    background-image: radial-gradient(circle, #0072c4, #0090d3, #00abcf, #00c2bc, #42d6a2, #7cd684, #a9d36b, #d3cd5c, #e4b449, #f29a44, #fa7d4d, #fb5f5f);
+}
+
+.intro{
+    color: #0b0b58;
+    text-align: center;
+}
+
+.ingrediants{
+color: rgba(30, 0, 164, 0.97);
+text-align: center;
+}
+
