@@ -15,5 +15,13 @@ while(endTheGame == False):
         print(i)
     
 
-    playerInput= input("Where do you wanna go")
+    playerInput= input("Where do you wanna go?")
     print(playerInput)
+
+    x=input()
+    y=input()
+    gameboard[x][y]
+
+    
+
+
