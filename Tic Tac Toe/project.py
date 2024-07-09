@@ -68,7 +68,7 @@ while done == False and (beenHere)!=[True,True,True,False]:
                 done=True
             #End Loop (Died)
             elif user_choice == "no":
-                pass
+                print("you dip your toes in the water and enjoy the sites")
         elif user_choice == "East":
             user_choice=input("You found a Cabin, do you want to run?(first letter should be lowercase)")
             if user_choice == "yes":
@@ -105,10 +105,8 @@ while done == False and (beenHere)!=[True,True,True,False]:
             user_choice=input("You have discovered an asleep pack of wolves, do you want to run away?(first letter should be lowercase)")
             if user_choice == "yes":
                 print("You get chased and but survive.")
-                done=True
-            #End Loop (Died)
             elif user_choice == "no":
-                print("You hide and live to mew another day, or so you think. They came bck and killed you.")
+                print("You hide and live to mew another day, or so you think. They came back and killed you.")
                 done=True
             #End Loop (Died)
         elif user_choice == "3":
@@ -138,8 +136,6 @@ while done == False and (beenHere)!=[True,True,True,False]:
             user_choice=input("You have discovered a treehouse, do you want to enter?)")
             if user_choice == "yes":
                 print("You tripped on a stick and fell out, but you survived, because it was only 1.5 feet above ground.")
-                done=True
-            #End Loop (Died)-
             elif user_choice == "no":
                 print("the gnomes in the treehouse shot you.")
                 done=True
@@ -149,41 +145,19 @@ while done == False and (beenHere)!=[True,True,True,False]:
             if user_choice == "yes":
                 print("You entered the cave and found the wolves you have to kill to escape.")
                 beenHere=[True,True,True,False]
+                done=True
+                break
             elif user_choice== "no":
                pass
     elif user_choice=='D':
         StatCheck(Backpack)
         print("You may live to mew another day ")
-while done==False:
-    if Backpack==[0,0,0]:
-        print("the wolves have killed you. You Died.")
-        done=True
+donefinalpart=False
+while donefinalpart==False:
+  
             #End Loop (Died)
-    elif Backpack==[0,5,0]:
-        print("the wolves have killed you.You Died.")
-        done=True
-            #End Loop (Died)
-    elif Backpack==[3,5,0]:
-        print("the wolves have killed you.You Died.")
-        done=True
-            #End Loop (Died)
-    elif Backpack==[3,0,0]:
-        print("the wolves have killed you.You Died.")
-        done=True
-            #End Loop (Died)
-    elif Backpack==[3,5,1]:
+    if Backpack==[3,5,3]:
         print("the wolves attacked the bag and not you, YOU WON!!!")
-        done=True
-            #End Loop (Won)
-    elif Backpack==[3,0,1]:
-        print("the wolves have killed you.You Died.")
-        done=True
-            #End Loop (Won)
-    elif Backpack==[0,5,1]:
-        print("the wolves have killed you.You Died.")
-        done=True
-            #End Loop (Won)
-    elif Backpack==[0,0,1]:
-        print("the wolves have killed you.You Died.")
-        done=True
-            #End Loop (Won)
+        donefinalpart=True
+  
+
