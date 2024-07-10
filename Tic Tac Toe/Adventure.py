@@ -142,10 +142,9 @@ while done == False and (beenHere)!=[True,True,True,False]:
             #End Loop (Died)
         elif user_choice == "3":
             user_choice=input("You found a Cave, do you want to enter?(first letter should be lowercase)")
-            if user_choice == "yes" and beenHere==[True,True,True,False]:
-                print("You entered the cave and found the wolves you have to kill to escape.")
+            if user_choice == "yes":
+                print("You entered the cave and found the wolves you have to kill to escape, if you don't have all the resources you die.")
                 done=True
-                break
             elif beenHere!=[True,True,True,False]:
                 print("You got killed by wolves")
             if user_choice== "no":
