@@ -1,6 +1,6 @@
-a= "lions"
-b= "tigers"
-c= "dogs"
+a= "lion"
+b= "tiger"
+c= "dog"
 
 print(a,b,c)
 
