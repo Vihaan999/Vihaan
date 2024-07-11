@@ -36,7 +36,7 @@ while(endTheGame == False):
     Y= int(input("Which column? (1-7)"))-1
 
 
-    if Y>=8:
+    if Y>=7:
         print("You cant move there,your turn get skipped loser.")
         continue
     if Y<=-1:

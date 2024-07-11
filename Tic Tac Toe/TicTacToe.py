@@ -27,10 +27,25 @@ while(endTheGame == False):
     Y= int(input("Which row? (1-3)"))-1
         
     X= int(input("Which column? (1-3)"))-1
-    gameboard[Y][X]=player
-    Z+=1
 
 
+    if Y>=4:
+        print("You cant move there,your turn get skipped loser.")
+        continue
+    elif Y<=-1:
+        print("You cant move there,your turn get skipped loser.")
+        continue
+
+    elif X>=4:
+        print("You cant move there,your turn get skipped loser.")
+        continue
+    elif X<=-1:
+        print("You cant move there,your turn get skipped loser.")
+        continue
+    else:
+        gameboard[Y][X]=player
+        Z+=1
+        
     if gameboard[0][0]==gameboard[0][1]==gameboard[0][2] != 0:
         print ("You win!!!:)")
         endTheGame == True
