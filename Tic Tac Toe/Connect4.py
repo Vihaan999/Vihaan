@@ -36,6 +36,13 @@ while(endTheGame == False):
     Y= int(input("Which column? (1-7)"))-1
 
 
+    if Y>=8:
+        print("You cant move there,your turn get skipped loser.")
+        continue
+    if Y<=-1:
+        print("You cant move there,your turn get skipped loser.")
+        continue
+
     for t in reversed(range(0,len(Gameb))):
     
         if Gameb[t][Y]==0:
@@ -57,6 +64,4 @@ while(endTheGame == False):
     fullprint(Gameb)
 
 
-    
- 
-    
+

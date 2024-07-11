@@ -26,5 +26,5 @@ if user_choice == "5":
 if user_choice == "6":
     import TicTacToe
 
-if user_choice == "6":
+if user_choice == "7":
     import Connect4
