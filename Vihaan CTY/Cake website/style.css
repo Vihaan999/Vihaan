@@ -1,0 +1,26 @@
+body{
+    background-color: black;
+}
+.intro{
+    color: #4eff32;
+    text-align: center;
+}
+
+.ingrediants{
+color: rgba(177, 241, 66, 0.97);
+text-align: center;
+}
+
+.steps{
+color: #86f312;
+text-align: center;
+}
+
+.directions{
+color: #4eff32;
+text-align: center;
+}
+
+.Contact{
+    color: #4eff32;
+}
